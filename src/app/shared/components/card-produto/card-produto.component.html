@@ -1,0 +1,18 @@
+<div class="card" style="width: 18rem">
+    <img [src]="produtos.foto" class="card-img-top" alt="{{produtos.alt}}" />
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ produtos.nomeProduto | uppercase }}<br>
+        <span *ngIf="produtos.promocao; else elseBlock" class="badge badge-success">
+          Promoção
+        </span>
+        <ng-template #elseBlock>
+          <span class="badge badge-primary">Aproveite</span>
+        </ng-template>
+      </h5>
+      <p class="card-text">Identificação: {{ produtos.idProduto | number:'2.0-3' }} <br>
+      Validade: {{produtos.dataValidade | date: 'shortDate'}}
+      </p>
+      <a href="#" class="btn btn-primary float-right">{{ produtos.precoProduto | currency: 'BRL' }}</a>
+    </div>
+  </div>

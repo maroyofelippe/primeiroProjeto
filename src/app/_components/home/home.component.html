@@ -1,0 +1,15 @@
+<br /><br />
+<h1>Seja bem vindo ao curso de Angular - Etec ABH.</h1>
+<h4 class="text-danger">{{ anuncio }}</h4>
+<br />
+<div class="row mt-3">
+    <div class="col my-2" *ngFor = "let prodCard of listaProdutos2">
+        <app-card-produto [produtos] = "prodCard">
+        </app-card-produto>
+    </div>
+</div>
+
+
+
+
+
