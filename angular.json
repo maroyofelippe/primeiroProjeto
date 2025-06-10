@@ -44,6 +44,9 @@
             "outputPath": "dist/primeiro-projeto",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "allowedCommonJsDependencies":[
+              "lodash"
+            ],
             "polyfills": [
               "zone.js"
             ],
@@ -62,7 +65,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
+              //"node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
