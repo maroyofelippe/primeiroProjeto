@@ -11,7 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ProdutosService {
   private URLJS: string = 'http://localhost:3000/produtos';
 
-  private urlBaseProdutos: string = 'http://backendprodutos.somee.com/backendprodutos/Produtos';
+  private urlBaseProdutos: string = 'https://backendprodutos.somee.com/backendprodutos/Produtos';
   private lerTudo: string = '/GetAll';
   
   constructor(private http: HttpClient, private toastr: ToastrService) { }
